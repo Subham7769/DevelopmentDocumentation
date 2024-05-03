@@ -3,7 +3,7 @@ import "./TestComponent.css";
 // import TestTable from "./TestVarietyData.jsx";
 // import TestDocumentTesting from "../TestComponent/TestDocumentsTestings.jsx";
 // import TestProductList from "./TestProductList.jsx";
-import ProductResearchView from "../Dashboard/ProductResearchView/ProductResearchView.jsx";
+// import ProductResearchView from "../DashboardReact/ProductResearchView/ProductResearchView.js";
 
 const TestComponent = () => {
   return (
@@ -12,7 +12,7 @@ const TestComponent = () => {
       {/* <TestTable/> */}
       {/* <TestDocumentTesting/> */}
       {/* <TestProductList/> */}
-      <ProductResearchView />
+      {/* <ProductResearchView /> */}
     </div>
   );
 };

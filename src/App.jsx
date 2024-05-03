@@ -1,11 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Common/Header/Header";
-import Dashboard from "./Components/Dashboard/Dashboard";
+import DashboardReact from "./Components/DashboardReact/DashboardReact";
 import { Provider } from "react-redux";
 import { store } from "./Redux/Store";
 import LandingPage from "./Components/LandingPage/LandingPage";
-import LoginSignin from './Components/LoginSignin/LoginSignin'
 
 const App = () => {
   return (
@@ -15,15 +14,14 @@ const App = () => {
             <Header />
             <Routes>
               <Route path="/" element={<LandingPage />} />
-              <Route path="/LoginSignin" element={<LoginSignin />} />
-              <Route path="/Dashboard" element={<Dashboard />} >
+              <Route path="/React" element={<DashboardReact />} >
                 {/* Nested Routes */}
-                <Route path="NewProduct" element={<Dashboard.DashboardMain />} />
-                <Route path="swot" element={<Dashboard.DashboardMain />} />
-                <Route path="knowledgeBase" element={<Dashboard.DashboardMain />} />
-                <Route path="MarketResearch" element={<Dashboard.DashboardMain />} />
-                <Route path="PriceCalculation" element={<Dashboard.DashboardMain />} />
-                <Route path="TestComponent" element={<Dashboard.DashboardMain />} />
+                <Route path="NewProduct" element={<DashboardReact.DashboardMain />} />
+                <Route path="swot" element={<DashboardReact.DashboardMain />} />
+                <Route path="knowledgeBase" element={<DashboardReact.DashboardMain />} />
+                <Route path="MarketResearch" element={<DashboardReact.DashboardMain />} />
+                <Route path="PriceCalculation" element={<DashboardReact.DashboardMain />} />
+                <Route path="TestComponent" element={<DashboardReact.DashboardMain />} />
               </Route>
             </Routes>
           </div>

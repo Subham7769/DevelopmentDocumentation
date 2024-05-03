@@ -1,9 +1,8 @@
 import "./style.css";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import { RWebShare } from "react-web-share";
 import { Button } from "@mui/material";
-import logo from "./logo.gif";
+
 
 const LandingPage = () => {
   return (
@@ -41,27 +40,8 @@ const LandingPage = () => {
           <NavLink to="/Dashboard">
             <Button variant="contained">Dashboard</Button>
           </NavLink>
-          <RWebShare
-            data={{
-              text: "Step Wise",
-              url: "https://business-research.vercel.app/",
-              title: "Step Wise",
-            }}
-          >
-            <div>
-              <Button variant="contained">Share</Button>
-            </div>
-          </RWebShare>
+
         </motion.div>
-      </div>
-      <div className="imageContainer">
-        <motion.img
-          initial={{ y: -20 }}
-          animate={{ y: 20 }}
-          src={logo}
-          alt=""
-          className="phone"
-        />
       </div>
     </main>
   );

@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './DashboardMain.css';
 import SWOTComponent from '../SWOTComponent/SWOTComponent.jsx'
 import KnowledgeGathering from '../KnowledgeGathering/KnowledgeGathering.jsx';
-import TestComponent from '../../TestComponent/TestComponent';
+import TestComponent from '../../TestComponent/TestComponent.jsx';
 import AddNewProduct from '../AddNewProduct/AddNewProduct.jsx';
 import MarketResearch from '../MarketResearch/MarketResearch.jsx'
 import PriceCalculation from '../PriceCalculation/PriceCalculation.jsx'
